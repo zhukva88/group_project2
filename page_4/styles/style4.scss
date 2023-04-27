@@ -1,10 +1,16 @@
-body {
-
-
-    background-color: red;
+html {
+    box-sizing: border-box;
 }
 
-.hren {
-    background-color: aqua;
-    color: blue;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1920px;
+    width: 100%;
+    background-color: #E2D3CE;
 }
