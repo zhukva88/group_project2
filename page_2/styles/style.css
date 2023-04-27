@@ -1,1 +1,54 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Inter:wght@400;500;700&family=Montserrat:ital,wght@0,500;0,700;1,400;1,500;1,700&family=Playfair+Display:wght@400;700;800&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, img, hr, pre, form, fieldset, input, textarea, blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* veriables */
+.body {
+  font-family: "Playfair Display", serif;
+  color: #000000;
+}
+
+.header {
+  background-image: url(../../page_2/images/heade_bg_top_inner.png);
+  min-height: 475px;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav-list {
+  display: flex;
+  gap: 40px;
+}/*# sourceMappingURL=style.css.map */
