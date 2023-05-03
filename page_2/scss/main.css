@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, img, hr, pre, form, fieldset, input, textarea, blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.header {
+  min-height: 475px;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav-list {
+  display: flex;
+  gap: 40px;
+}/*# sourceMappingURL=main.css.map */
