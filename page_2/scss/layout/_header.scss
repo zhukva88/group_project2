@@ -1,0 +1,13 @@
+.header{
+    min-height: 475px;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+
+&__nav-list{
+    display: flex;
+    gap: 40px;
+}
+}

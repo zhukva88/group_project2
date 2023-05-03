@@ -1,87 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    
-    <link rel="stylesheet" href="page_2/styles/normolize.css" />
-    <link rel="stylesheet" href="page_2/styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Inter:wght@400;500;700&family=Montserrat:ital,wght@0,500;0,700;1,400;1,500;1,700&family=Playfair+Display:wght@400;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body class="body">
-    <div class="grand-wrapper">
-      <header class="header">
-        <div class="header__logo">
-          <a href="#"><img src="page_2/images/logo.png" alt="Logo" /></a>
+<head>
+  <meta charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>LuxTrips</title>
+
+  <link rel="stylesheet" href="page_2/styles/normolize.css" >
+  <link rel="stylesheet" href="page_2/styles/style.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Inter:wght@400;500;700&family=Montserrat:ital,wght@0,500;0,700;1,400;1,500;1,700&family=Playfair+Display:wght@400;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="body">
+
+  <div class="grand-wrapper">
+    <header class="header">
+      <div class="header__logo">
+        <a href="#"><img src="page_2/images/logo.png" alt="Logo"></a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="#" class="header__nav-item">Home</a></li>
+
+          <li>
+            <a href="#" class="header__nav-item">Luxury packages</a>
+          </li>
+
+          <li><a href="#" class="header__nav-item">Book with us</a></li>
+          <li><a href="#" class="header__nav-item">Why Lux Trips</a></li>
+          <li><a href="#" class="header__nav-item">Contact</a></li>
+          <li><a href="#" class="header__nav-item">Client Area</a></li>
+        </ul>
+      </nav>
+      <div class="header__btn">
+        <button class="button-header">Call Me Back</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="wrapper-content">
+
+        <div class="titles-main">
+          <h1>Luxury packages</h1>
         </div>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li><a href="#" class="header__nav-item">Home</a></li>
+        <div class="tour-selection">
+          <button class="tour-selection__btn">find your journey</button>
+          <div class="tour-selection__card">
+            <div class="tour-selection__options tour-type"><span>Luxury Tours</span></div>
+            <div class="tour-selection__options date"><span> When</span></div>
+            <!-- <div class="tour-selection__options date">
+              <span> When</span> <input  type="date" />
+            </div> -->
+            <div class="tour-selection__options number"><span> Travellers</span></div>
+            <div><label class="checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <span class="label-text"> Group tours</span></label></div>
 
-            <li>
-              <a href="#" class="header__nav-item">Luxury packages</a>
-            </li>
-
-            <li><a href="#" class="header__nav-item">Book with us</a></li>
-            <li><a href="#" class="header__nav-item">Why Lux Trips</a></li>
-            <li><a href="#" class="header__nav-item">Contact</a></li>
-            <li><a href="#" class="header__nav-item">Client Area</a></li>
-          </ul>
-        </nav>
-        <div class="header__btn">
-          <button>Call Me Back</button>
-        </div>
-      </header>
-      <style>
-        .block {
-            position: relative;
-            max-width: 240px;
-            width: 100%;
-            border-radius: 67px;
-            background: white;
-            padding: 13px;
-            margin: auto;
-            text-align: center;
-        }
-        .block::before {
-            content: "";
-            display: block;
-            position: absolute;
-            height: 30px;
-            top: -30px;
-        }
-        </style>
-      <main>
-        <div class="list">
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <div class="list__footer">
-                <button></button>
+            <div><label class="checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <span class="label-text">Customise tours</span></label>
             </div>
+          </div>
         </div>
-      </main>
-    </div>
-  </body>
+
+
+
+        <div class="list">
+          <article class="list__content"><img class="list__img img-1" src="page_2/images/image_1.png" alt="img">
+            <div class="list__card-content card">
+              <div class="card__content">
+                <div class="card__country">
+                  <h4>Austria</h4>
+                  <h2>Winter Park Ski Holiday</h2>
+                </div>
+                <div class="card__price">
+                  <h3>From</h3>
+                  <h2>€ 1490</h2>
+                </div>
+              </div>
+
+              <div class="card__rating">
+                <span>4.0 </span>
+                <ul class="raitings">
+                  <li class="raitings__item"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                </ul>
+              </div>
+            </div>
+
+          </article>
+
+          <article class="list__content"><img class="list__img img-2" src="page_2/images/image_2.png" alt="img">
+            <div class="list__card-content card">
+              <div class="card__content">
+                <div class="card__country">
+                  <h4>Peru</h4>
+                  <h2>Machu Picchu </h2>
+                </div>
+                <div class="card__price card-btn ">
+                  <h3>From</h3>
+                  <div class="list__card-footer">
+                    <h2>€ 2300</h2>
+                    <!-- <button class="list__button">customise</button> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__rating rating-five">
+                <span>5.0  </span>
+                <ul class="raitings">
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="list__content"><img class="list__img img-3" src="page_2/images/image_3.png" alt="img">
+            <div class="list__card-content card">
+              <div class="card__content">
+                <div class="card__country">
+                  <h4>Croatia</h4>
+                  <h2>Hvar</h2>
+                </div>
+                <div class="card__price">
+                  <h3>From</h3>
+                  <h2>€ 4500</h2>
+                </div>
+              </div>
+
+              <div class="card__rating">
+                <span>4.0 </span>
+                <ul class="raitings">
+                  <li class="raitings__item"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="list__content"><img class="list__img img-4" src="page_2/images/image_4.png" alt="img">
+            <div class="list__card-content card">
+              <div class="card__content">
+                <div class="card__country">
+                  <h4>Jordan</h4>
+                  <h2>Wadi Musa</h2>
+                </div>
+                <div class="card__price">
+                  <h3>From</h3>
+                  <h2>€ 4500</h2>
+                </div>
+              </div>
+
+              <div class="card__rating">
+                <span>4.0 </span>
+                <ul class="raitings">
+                  <li class="raitings__item"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="list__content"><img class="list__img img-5" src="page_2/images/image_5.png" alt="img">
+            <div class="list__card-content card">
+              <div class="card__content">
+                <div class="card__country">
+                  <h4>Jordan</h4>
+                  <h2>Wadi Musa</h2>
+                </div>
+                <div class="card__price">
+                  <h3>From</h3>
+                  <h2>€ 4500</h2>
+                </div>
+              </div>
+
+              <div class="card__rating">
+                <span>4.0 </span>
+                <ul class="raitings">
+                  <li class="raitings__item"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="list__content"><img class="list__img img-6" src="page_2/images/image_6.png" alt="img">
+            <div class="list__card-content card">
+              <div class="card__content">
+                <div class="card__country">
+                  <h4>Jordan</h4>
+                  <h2>Wadi Musa</h2>
+                </div>
+                <div class="card__price">
+                  <h3>From</h3>
+                  <h2>€ 4500</h2>
+                </div>
+              </div>
+
+              <div class="card__rating">
+                <span>4.0 </span>
+                <ul class="raitings">
+                  <li class="raitings__item"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="list__content"><img class="list__img img-7" src="page_2/images/image_7.png" alt="img">
+            <div class="list__card-content card">
+              <div class="card__content">
+                <div class="card__country">
+                  <h4>Jordan</h4>
+                  <h2>Wadi Musa</h2>
+                </div>
+                <div class="card__price">
+                  <h3>From</h3>
+                  <h2>€ 4500</h2>
+                </div>
+              </div>
+
+              <div class="card__rating">
+                <span>4.0 </span>
+                <ul class="raitings">
+                  <li class="raitings__item"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="list__content"><img class="list__img img-8" src="page_2/images/image_8.png" alt="img">
+            <div class="list__card-content card">
+              <div class="card__content">
+                <div class="card__country">
+                  <h4>Jordan</h4>
+                  <h2>Wadi Musa</h2>
+                </div>
+                <div class="card__price">
+                  <h3>From</h3>
+                  <h2>€ 4500</h2>
+                </div>
+              </div>
+
+              <div class="card__rating">
+                <span>4.0 </span>
+                <ul class="raitings">
+                  <li class="raitings__item"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="list__content"><img class="list__img img-9" src="page_2/images/image_9.png" alt="img">
+            <div class="list__card-content card">
+              <div class="card__content">
+                <div class="card__country">
+                  <h4>Jordan</h4>
+                  <h2>Wadi Musa</h2>
+                </div>
+                <div class="card__price">
+                  <h3>From</h3>
+                  <h2>€ 4500</h2>
+                </div>
+              </div>
+
+              <div class="card__rating">
+                <span>4.0 </span>
+                <ul class="raitings">
+                  <li class="raitings__item"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="list__content"><img class="list__img img-10" src="page_2/images/image_10.png" alt="img">
+            <div class="list__card-content card">
+              <div class="card__content">
+                <div class="card__country">
+                  <h4>Jordan</h4>
+                  <h2>Wadi Musa</h2>
+                </div>
+                <div class="card__price">
+                  <h3>From</h3>
+                  <h2>€ 4500</h2>
+                </div>
+              </div>
+
+              <div class="card__rating">
+                <span>4.0 </span>
+                <ul class="raitings">
+                  <li class="raitings__item"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="list__content"><img class="list__img img-11" src="page_2/images/image_11.png" alt="img">
+            <div class="list__card-content card">
+              <div class="card__content">
+                <div class="card__country">
+                  <h4>Peru</h4>
+                  <h2>Machu Picchu </h2>
+                </div>
+                <div class="card__price card-btn ">
+                  <h3>From</h3>
+                  <div class="list__card-footer">
+                    <h2>€ 2300</h2>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__rating rating-five">
+                <span>5.0  </span>
+                <ul class="raitings">
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="list__content"><img class="list__img img-12" src="page_2/images/image_12.png" alt="img">
+            <div class="list__card-content card">
+              <div class="card__content">
+                <div class="card__country">
+                  <h4>Jordan</h4>
+                  <h2>Wadi Musa</h2>
+                </div>
+                <div class="card__price">
+                  <h3>From</h3>
+                  <h2>€ 4500</h2>
+                </div>
+              </div>
+
+              <div class="card__rating">
+                <span>4.0 </span>
+                <ul class="raitings">
+                  <li class="raitings__item"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                  <li class="raitings__item raitings__item_active"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="list__footer">
+          <button class="button block">Load more</button>
+        </div>
+
+
+        <div class="subscribe">
+          <div class="subscribe__text">
+            <div class="subscribe__title">
+              <h2>Get weekly inspiration and expert advice</h2>
+            </div>
+            <div class="subscribe__calling">
+              <p>Sign up for our Weekly Newsletter</p>
+            </div>
+          </div>
+          <div class="subscribe__form">
+            <form class="subscribe__btn-form" action="http://foo.com" method="post">
+              <input class="subscribe__email" type="email" id="email" name="email" placeholder="Email address " required>
+              <button class="subscribe__btn block " type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer__wrapper">
+            <nav class="footer__nav">
+              <ul class="footer__nav-list-left">
+                <li><a href="#" class="footer__nav-item">Luxury packages</a></li>
+
+                <li>
+                  <a href="#" class="footer__nav-item">Book with us</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="footer__btn">
+              <div class="footer__logo"><img src="page_2/images/logo_footer.png" alt="logo"></div>
+              <button class="button-footer">Call Me Back</button>
+            </div>
+
+            <nav class="footer__nav">
+              <ul class="footer__nav-list-richt">
+                <li><a href="#" class="footer__nav-item">Why Lux Trips</a></li>
+                <li><a href="#" class="footer__nav-item">Contact</a></li>
+              </ul>
+            </nav>
+
+          </div>
+        </footer>
+
+      </div>
+    </main>
+  </div>
+</body>
+
 </html>
