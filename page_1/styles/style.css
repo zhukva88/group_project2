@@ -1,1 +1,573 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E2D3CE;
+}
+
+header {
+  max-width: 1920px;
+  height: 65vw;
+  background-image: url(../images/pins.png), url(../images/gradient.png), url(../images/2.png), url(../images/1.png), url(../images/sky.png);
+  background-size: 89%, 100% 30%, 100% 60%, 100% 70%, 100% 90%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: center left, bottom, bottom, bottom, top;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.header__navigation-element {
+  text-decoration: none;
+  color: black;
+  padding-left: 20px;
+  font-size: 1.5vw;
+  font-family: "Forum", cursive;
+}
+
+.header__buttom {
+  font-size: 1vw;
+  font-family: "Forum", cursive;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  background-image: url(../images/button_call_me.png);
+  background-size: 80%;
+  background-position: 55%;
+  background-repeat: no-repeat;
+  padding: 17px 20px 17px 20px;
+}
+
+.header__logo {
+  width: 100px;
+  height: 100px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.text__span {
+  text-align: center;
+  width: 10vw;
+  font-family: "Forum", cursive;
+  font-size: 2vw;
+}
+
+.text__bold {
+  padding-top: 30px;
+  line-height: 8.5vw;
+  text-align: center;
+  width: 60vw;
+  color: #FCFCFC;
+  font-family: "Forum", cursive;
+  font-size: 13vw;
+  font-weight: 300;
+}
+
+.text__addition {
+  color: #FCFCFC;
+  font-family: "Forum", cursive;
+  font-size: 12vw;
+  font-weight: 200;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.form__title {
+  display: flex;
+  width: 22vw;
+  height: 3vw;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 60px;
+  text-align: center;
+  color: #79655E;
+  font-size: 2vw;
+  font-family: "Forum", cursive;
+}
+
+.form__search {
+  height: 8vw;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 0.5fr;
+  gap: 3vw;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.form__find {
+  align-self: center;
+  background-color: black;
+  color: #FFFFFF;
+  border-radius: 8vw;
+  height: 4vw;
+  width: 8vw;
+  margin-top: 5px;
+  margin-right: 19px;
+  margin-bottom: 5px;
+  font-family: "Forum", cursive;
+  font-size: 1.8vw;
+  background-image: url(../images/icon_search.svg);
+  background-repeat: no-repeat;
+  background-position: 15% 48%;
+  text-align: right;
+  background-size: 20%;
+  letter-spacing: 1px;
+}
+
+.form-search-destination {
+  text-align: center;
+  border: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 900;
+  padding-left: 18px;
+}
+
+.form__search-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 7px;
+}
+
+.form__search-span {
+  padding-left: 30px;
+  background-image: url(../images/icon_destination.svg);
+  background-repeat: no-repeat;
+  background-position: 15%;
+  color: #79655E;
+  font-family: "Manrope", sans-serif;
+}
+
+.form__travel-type {
+  border: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 900;
+  padding-left: 30px;
+}
+
+.form__search-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.form__search-span_two {
+  background-image: url(../images/icon_travel.svg);
+  background-position: 10%;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__search-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.form__search-date {
+  border: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 900;
+  padding-left: 30px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.form__search-amount {
+  border: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 900;
+  padding-left: 30px;
+}
+
+.form__search-span_three {
+  background-image: url(../images/icon_calendar.svg);
+}
+
+.form__search-four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.form__search-span_four {
+  background-image: url(../images/icon_travellers.svg);
+  background-position: 10%;
+}
+
+.section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-one__title {
+  font-size: 4.5vw;
+  font-family: "Forum", cursive;
+  margin-top: 2vw;
+  padding-top: 4vw;
+  width: 39vw;
+  height: 16vw;
+  text-align: center;
+  background-image: url(../images/section-one_deco.png);
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  line-height: 4.5vw;
+}
+
+.section-one__navigation {
+  display: flex;
+}
+
+.section-one__navigation-element {
+  padding-left: 22px;
+  font-size: 1.9vw;
+  text-decoration: none;
+  color: #79655E;
+  padding-bottom: 30px;
+}
+
+.section-one__navigation-element:hover {
+  color: black;
+  background-image: url(../images/icon_navigation-element.svg);
+  background-repeat: no-repeat;
+  background-position: 73% 60%;
+}
+
+.section-one__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.section-one__images-element_snow {
+  background-image: url(../images/image-element.png), url(../images/section-one_snow.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, contain;
+  background-position: 90% 93%;
+}
+
+.section-one__images-element {
+  display: flex;
+  align-items: flex-end;
+  height: 33vw;
+  width: 22vw;
+}
+
+.section-one__images-element_mount {
+  background-image: url(../images/image-element.png), url(../images/section-one_mount.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, contain;
+  background-position: 90% 93%;
+}
+
+.section-one__images-element_beach {
+  background-image: url(../images/image-element.png), url(../images/section-one_beach.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, contain;
+  background-position: 90% 93%;
+}
+
+.section-one__images-element_musa {
+  background-image: url(../images/image-element.png), url(../images/sectione-one_musa.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, contain;
+  background-position: 90% 93%;
+}
+
+.section-one__images-title {
+  font-size: 2.1vw;
+  color: white;
+  line-height: 2.5vw;
+  margin-bottom: 1vw;
+}
+
+.section-one__images-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 3vw;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+}
+
+.section-one__images-city {
+  color: white;
+  font-size: 0.9vw;
+  font-family: "Manrope", sans-serif;
+  background-image: url(../images/icon_location.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  padding-left: 1vw;
+}
+
+.section-one__images-from {
+  color: white;
+  font-size: 0.9vw;
+  font-family: "Manrope", sans-serif;
+}
+
+.section-one__images-amount {
+  color: white;
+  font-size: 1.8vw;
+  font-size: "Forum", cursive;
+}
+
+.section-two {
+  background: url(../images/section-two__background-picture.png), linear-gradient(#E2D3CE, #C9C8D8, #D4D8C6, #E2D3CE);
+  background-repeat: no-repeat;
+  background-position: 40% 100%;
+  background-size: 100% 40%, 100%;
+}
+
+.section-two__container {
+  height: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 2fr 1fr 1fr 1fr 1fr;
+  margin-top: 8vw;
+  row-gap: 2.5vw;
+  padding-left: 7vw;
+  padding-right: 3vw;
+}
+
+.section-two__packages {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  width: 14vw;
+}
+
+.section-two__images-titel {
+  color: white;
+  font-size: 2.5vw;
+  font-family: "Forum", cursive;
+  width: 18vw;
+  text-align: center;
+  padding-top: 4vw;
+}
+
+.section-two__images {
+  width: 28vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-two__images_one {
+  background-image: url(../images/frame_romb.png), url(../images/romb.png), url(../images/image_best-winter-dest.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, auto;
+  background-position: 50% 94%, 50% 90%;
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.section-two__images_two {
+  background-image: url(../images/frame_romb.png), url(../images/romb_two.png), url(../images/most-extraordinary-places.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, auto;
+  background-position: 50% 94%, 50% 90%;
+  grid-row: 1/3;
+  grid-column: 3/4;
+}
+
+.section-two__images_three {
+  background-image: url(../images/frame_romb.png), url(../images/romb_three.png), url(../images/new-destinations-2022.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, auto;
+  background-position: 50% 94%, 50% 90%;
+  grid-row: 3/6;
+  grid-column: 1/2;
+}
+
+.section-two__images_four {
+  background-image: url(../images/frame_romb.png), url(../images/romb_four.png), url(../images/your-health.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, auto;
+  background-position: 50% 94%, 50% 90%;
+  grid-row: 4/7;
+  grid-column: 2/3;
+}
+
+.section-two__images_five {
+  background-image: url(../images/frame_romb.png), url(../images/romb_five.png), url(../images/away-from-crowd.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, auto;
+  background-position: 50% 94%, 50% 90%;
+  grid-row: 3/6;
+  grid-column: 3/4;
+}
+
+.section-two__packages-title {
+  font-size: 4vw;
+  font-family: "Forum", cursive;
+}
+
+.section-two__packages-btn {
+  background: transparent;
+  border: black;
+  border-style: ridge;
+  padding: 1vw 2vw;
+  border-radius: 4vw;
+  font-family: "Forum", cursive;
+  font-size: 1.2vw;
+  margin-top: 2vw;
+}
+
+.section-two__booking {
+  font-size: 3.5vw;
+  font-family: "Forum", cursive;
+  text-align: center;
+  padding: 4vw 40vw 2vw 47vw;
+}
+
+.section-two__booking-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  gap: 3vw;
+  padding-top: 3vw;
+}
+
+.section-two__images-amount {
+  display: grid;
+  grid-template-rows: 30px 30px 30px;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 7vw;
+  font-family: "Forum", cursive;
+  color: #FFFFFF;
+  font-size: 1.5vw;
+  letter-spacing: 1px;
+}
+
+.section-two__images-amount_large {
+  font-size: 2.5vw;
+  padding: 0;
+}
+
+.section-two__booking-container_one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18vw;
+  background-image: url(../images/section-two_supercars.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-two__booking-title {
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  font-family: "Forum", cursive;
+  font-size: 3.3vw;
+}
+
+.section-two__booking-container_two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18vw;
+  background-image: url(../images/section-two_hotel.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-three__booking {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+}
+
+.section-three__booking-container_three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18vw;
+  background-image: url(../images/section-three_villas.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-three__booking-container_four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18vw;
+  background-image: url(../images/section-three_yachts.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-three__booking-container_five {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18vw;
+  background-image: url(../images/section-three_helicopters.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-three__booking-container_six {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18vw;
+  background-image: url(../images/section-three_jet.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-three__booking-title {
+  text-align: center;
+  width: 15vw;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  font-family: "Forum", cursive;
+  font-size: 3.3vw;
+}/*# sourceMappingURL=style.css.map */
