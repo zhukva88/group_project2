@@ -59,8 +59,6 @@ button {
   max-width: 550px;
   display: flex;
   margin: 0 auto;
-  // justify-content: space-between;
-  // column-gap: 20px;
 }
 .about-us__title {
   white-space: pre-wrap;
@@ -70,69 +68,150 @@ button {
   color: $color;
   line-height: 58px;
 }
-.about-us__text {
+.about-us__text,
+.about-us__text-second {
   flex: 1;
   font-weight: 400;
   line-height: 179.8%;
   font-family: $font-second;
 }
 .about-us__img {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
+  margin: auto;
+  max-width: 1100px;
+  min-height: 310px;
+  position: relative;
+  background-image: url(../images/about-us_rhombus.png);
+  background-position: 46% 102%;
+  background-repeat: no-repeat;
+}
+.about-us__img-first {
+  position: absolute;
+  left: 5%;
+  top: -15px;
+}
+.about-us__img-child {
+  box-shadow: 3px 17px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 11.6406px;
+}
+.about-us__img-first::after {
+  background-image: url(../images/about-us_rhombus-second.png);
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 45px;
+  bottom: -38px;
+  height: 90px;
+  width: 47px;
+}
+.about-us__img-first::before {
+  background-image: url(../images/about-us_rhombus-third.png);
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  position: absolute;
+  left: -14px;
+  top: 147px;
+  height: 56px;
+  width: 30px;
+}
+.about-us__img-second {
+  top: 130px;
+  left: 75%;
+  position: absolute;
 }
 .about-us__img-family {
-  display: flex;
-  align-self: flex-end;
+  border-radius: 6.15158px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.about-us__img-second::after {
+  background-image: url(../images/about-us_rhombus-third.png);
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 27px;
+  bottom: -22px;
+  height: 56px;
+  width: 30px;
+}
+.about-us__img-third {
+  bottom: -310px;
+  right: 0;
+  position: absolute;
+}
+.about-us__img-woman {
+  border-radius: 9.07436px;
+  box-shadow: 12px 16px 32px rgba(0, 0, 0, 0.25);
+}
+.about-us__img-third::after {
+  background-image: url(../images/about-us_rhombus-second.png);
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50px;
+  bottom: -40px;
+  height: 90px;
+  width: 47px;
 }
 .about-us__box-second {
-  // margin: 200px auto 0 auto;
-  padding-top: 200px;
-  max-width: 550px;
-  display: flex;
-  justify-content: space-between;
-  column-gap: 30px;
-  margin: 0 auto;
+  justify-content: center;
+  padding-top: 270px;
+  column-gap: 1.7vw;
+  row-gap: 60px;
+  display: grid;
+  grid-template-columns: 320px 352px;
+  grid-template-rows: 190px 330px 180px;
+  grid-template-areas:
+    'title text-second'
+    'img text-third'
+    'img btn';
 }
 .about-us__title-second {
-  flex: 1;
+  margin-left: auto;
+  max-width: 256px;
+  grid-area: title;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   color: $color;
 }
-// .about-us__img-woman {
-//   position: absolute;
-//   left: 55vw;
-// }
-.about-us__box-third {
-  padding-top: 60px;
-  display: flex;
-  justify-content: center;
+.about-us__text-second {
+  grid-area: text-second;
+  max-width: 255px;
 }
-.about-us__text-btn {
-  padding-left: 80px;
-  padding-top: 110px;
+.about-us__img-couple {
+  grid-area: img;
+  border-radius: 12.6979px;
+  box-shadow: 12px 16px 32px rgba(0, 0, 0, 0.25);
 }
 .about-us__text-third {
-  max-width: 360px;
+  margin-top: auto;
+  grid-area: text-third;
   color: $color;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   font-family: $font;
-  padding-bottom: 50px;
 }
 .about-us__btn {
+  grid-area: btn;
   border: 0.624428px solid #0c0b10;
   border-radius: 61.3171px;
   background-color: transparent;
-  width: 215px;
+  height: 38px;
+  width: 217px;
   padding: 10px 30px 10px 30px;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.about-us__btn:hover {
+  background-color: black;
+  color: #ffffff;
 }
 .customise {
   margin-top: -200px;
@@ -276,6 +355,7 @@ button {
     url(../images/bg_subscribe-border.png);
   background-position: 0px 40px, center;
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 .subscribe__text {
   max-width: 500px;
@@ -296,6 +376,7 @@ button {
 .subscribe__input-btn {
   margin-top: 55px;
   position: relative;
+  max-width: 730px;
 }
 .subscribe__input {
   width: 480px;
@@ -328,6 +409,8 @@ button {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   z-index: 1;
+  right: 0;
+  cursor: pointer;
 }
 .subscribe__btn::before {
   background-image: url(../images/subscribe_btn.png);
@@ -340,9 +423,6 @@ button {
   right: 0;
   background-repeat: no-repeat;
 }
-// .reviews {
-//   padding-top: 40px;
-// }
 .reviews__title {
   height: 212px;
   max-width: 267px;
@@ -362,6 +442,7 @@ button {
   display: flex;
   column-gap: 30px;
   justify-content: center;
+  padding: 0 16px;
 }
 .reviews__item {
   max-width: 613px;
@@ -369,7 +450,7 @@ button {
   background-image: url(../images/reviews_border.png);
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: cover;
+  background-size: 100% 100%;
   color: #1d1a1a;
   font-family: $font-second;
   padding: 80px 65px 50px 65px;
@@ -407,25 +488,12 @@ button {
   justify-content: center;
   max-width: 920px;
   min-height: 525px;
-  // background-image: url(../images/contact_border.png);
-  // background-repeat: no-repeat;
   border: 1px solid #ffffff;
   backdrop-filter: blur(4.5px);
   border-radius: 10px;
   background: rgba(226, 211, 206, 0.2);
   background-size: 0 20px;
 }
-// .contact__wrap::before {
-//   background-image: url(../images/contact_border.png);
-//   content: '';
-//   display: block;
-//   position: absolute;
-//   z-index: -1;
-//   top: -7px;
-//   left: 15px;
-//   width: 885px;
-//   height: 540px;
-// }
 .contact__inner {
   max-width: 350px;
   display: flex;
@@ -433,6 +501,7 @@ button {
   row-gap: 30px;
 }
 .contact__btn {
+  margin-top: 15px;
   position: relative;
   width: 350px;
   height: 55px;
@@ -500,6 +569,7 @@ button {
   padding-top: 80px;
   display: flex;
   column-gap: 60px;
+  padding-right: 65px;
   justify-content: center;
   align-items: center;
 }
@@ -513,6 +583,9 @@ button {
   text-transform: uppercase;
   color: $color;
 }
+.footer__menu-link:hover {
+  color: #ffffff;
+}
 .footer__menu-btn {
   background-image: url(../images/footer_btn.png);
   width: 156px;
@@ -522,6 +595,10 @@ button {
   line-height: 18px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.footer__menu-btn:hover {
+  color: white;
 }
 .footer__copyright-text {
   padding-top: 140px;
