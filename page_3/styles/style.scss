@@ -38,10 +38,10 @@ html{
     font-size: 1.6rem;
     color: $color-secondary;
     font-family: $font-primary;
-    background-image:url(../images/bg_top_inner.jpg),url(../images/bg_footer.jpg);
+    background-image:url(../images/bg_top_inner.png),url(../images/bg_footer.png);
     background-position: top center, bottom center;
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: contain;
     overflow: hidden;
 }
 [class*="__container"]{
@@ -68,7 +68,8 @@ html{
     width: 12.1rem;
     height: 6.35rem;
     display: flex;
-    justify-content: flex-start;   
+    justify-content: flex-start; 
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);  
 }
 .header-nav__menu-list{
     max-width: 105.5rem;
@@ -81,7 +82,7 @@ html{
     text-decoration: none;
     color: inherit;
     @extend %font-primary;
-    line-height: 1.8rem;
+    line-height: 1.125;
     font-size: 1.6rem;
 }
 .header-nav__menu-item:not(:last-child){
@@ -90,6 +91,7 @@ html{
 .header-nav__menu-link{
     text-decoration: none;
     color: inherit;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);  
     cursor: pointer;
 }
 .header-nav__menu-link:hover{
@@ -107,6 +109,7 @@ html{
     letter-spacing: 0.4px;
     line-height: 17.6px; 
     padding: 5px 25px;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);  
 }
  /*main*---------------------------------------------*/
  .main__container-title{
@@ -120,6 +123,7 @@ html{
     font-size: 6rem;
     line-height: 5.8rem;
     margin: 0;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);  
 }
 .main__grid{
     max-width: 160rem;
@@ -137,6 +141,7 @@ html{
     min-height: 19.1rem;
     height: auto;
     padding: 15px;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);  
 }
 .main__grid_item1{
     grid-column-start: 1;
@@ -182,6 +187,7 @@ html{
     object-fit: cover;
     background: rgba($color: $color-primary, $alpha: 0);
     position: relative;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25); 
 }
 .main__grid_item-title_link{
     color: $color-primary;
@@ -190,10 +196,11 @@ html{
     text-transform: uppercase;
     @extend %font-primary;
     text-decoration: none;
-    @extend %bg-primary;    
+    @extend %bg-primary;  
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);    
 }
 .main__grid_item-title1{
-    background-image: url(../images/main-supercars1.png);  
+    background-image: url(../images/main-supercars1.png);
 }
 .main__grid_item-title2{
     background-image: url(../images/main-hotels2.png);
@@ -227,8 +234,8 @@ html{
     text-align: center;
     margin: 11.2rem 6.5rem;
     @extend %font-secondary;  
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 1.8rem;
+    line-height: 2;
 }
 .main__grid_item-button_btn-box{
     width: 25.4rem;
@@ -257,35 +264,44 @@ html{
 }
 /*доделать */
 .subscribe__box {
-    margin: -10px auto 70px auto;
+    margin: -1rem auto 7rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 6%;
-    padding-top: 140px;
-    padding-bottom: 114px;
-    max-width: 1110px;
+    padding-left: 8%;
+    padding-top: 14.5rem;
+    padding-bottom: 11rem;
+    max-width: 111rem;
     background-image: url(../images/main-subscrube-bg.png), url(../images/main-subscribe-border.png);
-    background-position: 50px, center;
+    background-position: 5rem, center;
     background-repeat: no-repeat;
-    border-radius: 10px;
+    border-radius: 1rem;
+  }
+  .subscribe__box > *:not(:last-child){
+    margin: 0px 0px 35px 0px ;
   }
   .subscribe__description{
-    max-width: 565px;
-    padding-left: 50px;
+    max-width: 56.5rem;
+    padding-left: 18.5rem;
+    margin-bottom: 4.4rem;
   }
   .subscribe__title {
+    max-width: 52rem;
+    min-height: 21rem;
     font-weight: 400;
-    font-size: 60px;
-    line-height: 58px;
+    font-size: 6rem;
+    line-height: 1.03;
     color: #ffffff;
     padding-bottom: 20px;
+    border: $border;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25); 
   }
   .subscribe__subtitle {
     font-weight: 400;
-    line-height: 179.8%;
+    line-height: 1.798;
     color: #ffffff;
     font-family: "Manrope", sans-serif;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25); 
   }
   .subscribe__input-btn {
     margin-top: 55px;
@@ -304,30 +320,30 @@ html{
   }
   .subscribe__input::-moz-placeholder {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 179.8%;
+    font-size: 1.6rem;
+    line-height: 1.798;
     color: #0c0b10;
-    font-family: "Manrope", sans-serif;
+    @extend%font-secondary;
     padding-left: 30px;
   }
   .subscribe__input::placeholder {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 179.8%;
+    font-size: 1.6rem;
+    line-height: 1.798;
     color: #0c0b10;
-    font-family: "Manrope", sans-serif;
+    @extend%font-secondary;
     padding-left: 30px;
   }
   .subscribe__btn {
     position: absolute;
     width: 330px;
     height: 55px;
-    margin-left: -70px;
+    margin-left: -60px;
     background: #ffffff;
     border-radius: 74px;
     font-weight: 400;
     font-size: 24px;
-    line-height: 26px;
+    line-height: 1.08;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -341,7 +357,7 @@ html{
     content: "";
     display: block;
     position: absolute;
-    top: -26px;
+    top: -36px;
     left: 26px;
     bottom: -33px;
     right: 0;
@@ -352,41 +368,49 @@ html{
 .footer__container{
     max-width: 160rem;
     min-height: 55rem;
+    margin-bottom: 8rem;
     border: solid 3px blue;  
 }
-.footer-nav__logo{
+.footer__logo{
     min-height: 30rem; 
     border: solid 3px purple;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-.footer-nav__logo-img{
+.footer__logo-img{
+    margin: 15rem 0rem 7rem;
     display: block;
     max-width: 21.5rem; 
-    min-height: 11.3rem;
+    min-height: 11.3rem; 
     border: $border;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25); 
 }
 .footer-nav{
     max-width: 67vw;
     border: $border; 
-    margin: -30px auto 50px;
+    margin: 0px auto 10.6rem;
 }
 .footer-nav__menu-list{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    padding: 0px 54px 0px 0px;
+    flex-wrap: wrap;
     border: 1px solid yellow;  
+}
+.footer-nav__menu-list:not(:last-child){
+    padding: 0rem 5.4rem 0rem 0rem;
 }
 .footer-nav__menu-link{
     @extend %font-primary;
-    line-height: 1.8rem;
+    line-height: 1.125;
     font-size: 1.6rem;
     color: #0C0B10;
     text-decoration: none;
     cursor: pointer;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25); 
     border: 1px solid green;   
 }
 .footer-nav__menu-link:hover{
@@ -394,35 +418,38 @@ html{
     color: $color-primary;
 }
 .footer-nav__button{
-    padding: 8px;
+    padding: 0.8rem;
     background-image: url(../images/button_call_me.png);
     @extend %bg-primary;      
 }
 .footer-nav__button-box{
-    max-width: 156px;
-    max-height: 56px;
+    max-width: 15.6rem;
+    max-height: 5.6rem;
     text-align: center;
 }
 .footer-nav__button-link{
-    max-width: 107px;
+    max-width: 10.7rem;
     max-height: 18px;
-    line-height: 1.7rem;
-    margin: 10px 25px;
+    @extend%font-primary;
+    font-size: 1.6rem;
+    line-height: 1.125;
+    margin: 1rem 2.5rem;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25); 
 }
 .privacy__container{
-    min-height: 12.5rem;
+    min-height: 1.6rem;
     display: flex;
     justify-content: space-between;
     align-items: end;
-    margin: 0 50px;
     border: 2px solid purple;
 }
 .privacy__text{
     @extend%font-secondary;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 1.2rem;
+    line-height: 1.33;
     color:$color-primary;
-    padding: 5px;
+    padding: 0.5rem;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25); 
     border: 2px solid purple;
 }
 
