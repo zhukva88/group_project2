@@ -288,44 +288,51 @@ html {
 }
 
 /*доделать */
+.main-subscribe__container {
+  padding-top: 14.5rem;
+    padding-bottom: 11rem;
+}
 .subscribe__box {
-  margin: -1rem auto 7rem auto;
+  box-sizing: border-box;
+  padding-left: 18.5rem;
+  padding-top: 13rem;
+  padding-bottom: 12rem;
+  margin: 0 auto 7rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 8%;
-  padding-top: 14.5rem;
-  padding-bottom: 11rem;
   max-width: 111rem;
   background-image: url(../images/main-subscrube-bg.png), url(../images/main-subscribe-border.png);
-  background-position: 5rem, center;
+  background-position: 0 3.8rem, center;
   background-repeat: no-repeat;
   border-radius: 1rem;
 }
 
-.subscribe__box > *:not(:last-child) {
+/* .subscribe__box > *:not(:last-child) {
   margin: 0px 0px 35px 0px;
-}
+} */
 
 .subscribe__description {
   max-width: 56.5rem;
-  padding-left: 18.5rem;
-  margin-bottom: 4.4rem;
+  /* padding-left: 18.5rem; */
+  /* margin-bottom: 4.4rem; */
 }
 
 .subscribe__title {
+  margin: 0;
   max-width: 52rem;
   min-height: 21rem;
   font-weight: 400;
   font-size: 6rem;
   line-height: 1.03;
   color: #ffffff;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   border: 2px solid red;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .subscribe__subtitle {
+  margin-top: 0;
   font-weight: 400;
   line-height: 1.798;
   color: #ffffff;
@@ -344,10 +351,12 @@ html {
   border: 1px solid #ffffff;
   border-radius: 95px;
   height: 55px;
+  padding-left: 4rem;
   background: transparent;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   outline: none;
+  box-sizing: border-box;
 }
 
 .subscribe__input::-moz-placeholder {
@@ -382,6 +391,7 @@ html {
   z-index: 1;
   right: 0;
   cursor: pointer;
+  border: none;
 }
 
 .subscribe__btn::before {
