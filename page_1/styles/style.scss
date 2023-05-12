@@ -73,7 +73,9 @@ header {
   font-size: 1.5vw;
   font-family: $font;
 }
-
+.header__navigation-element:hover {
+  color: #ffffff;
+}
 .header__buttom {
   font-size: 1vw;
   font-family: $font;
@@ -86,7 +88,9 @@ header {
   background-repeat: no-repeat;
   padding: 17px 20px 17px 20px;
 }
-
+.header__buttom:hover {
+  color: #ffffff;
+}
 .header__logo {
   width: 100px;
   height: 100px;
@@ -174,8 +178,8 @@ header {
   text-align: right;
   background-size: 20%;
   letter-spacing: 1px;
+  cursor: pointer;
 }
-
 .form-search-destination {
   text-align: center;
   border: none;
@@ -506,6 +510,11 @@ input[type='date']::-webkit-calendar-picker-indicator {
   font-family: $font;
   font-size: 1.2vw;
   margin-top: 2vw;
+  cursor: pointer;
+}
+.section-two__packages-btn:hover {
+  background-color: black;
+  color: #ffffff;
 }
 .section-two__booking {
   font-size: 3.5vw;
@@ -918,6 +927,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   justify-content: center;
   padding-left: 12%;
   padding-top: 140px;
+  padding-right: 16px;
   padding-bottom: 150px;
   max-width: 1110px;
   background-image: url(../images/bg__subscribe.png),
@@ -1137,14 +1147,14 @@ input[type='date']::-webkit-calendar-picker-indicator {
 .footer__menu {
   padding-top: 80px;
   display: flex;
-  column-gap: 60px;
+  column-gap: 3.5vw;
   padding-right: 65px;
   justify-content: center;
   align-items: center;
 }
 .footer__menu-list {
   display: flex;
-  column-gap: 60px;
+  column-gap: 3.5vw;
 }
 .footer__menu-link {
   font-weight: 400;
@@ -1180,4 +1190,29 @@ input[type='date']::-webkit-calendar-picker-indicator {
   line-height: 16px;
   color: #ffffff;
   font-family: $font-second;
+}
+@media screen and (max-width: 1024px) {
+  .about-us__img-second {
+    display: none;
+  }
+  .reviews__item_second {
+    display: none;
+  }
+  .about-us__box-second {
+    column-gap: 4vw;
+    row-gap: 30px;
+    grid-template-columns: 220px 350px;
+    grid-template-rows: 210px 180px 260px 65px;
+    grid-template-areas:
+      'title title'
+      'img text-second'
+      'img text-third'
+      'btn btn';
+  }
+  .about-us__title-second {
+    margin-left: 50px;
+  }
+  .about-us__btn {
+    margin: auto;
+  }
 }
