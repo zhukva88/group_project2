@@ -4,221 +4,477 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./page_1/styles/normalize.css" />
     <link rel="stylesheet" href="./page_1/styles/style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="header">
-        <img src="./page_1/images/logo.svg" alt="logo" class="header__logo" />
-        <nav class="header__navigation">
-          <a class="header__navigation-element" href="#">HOME</a>
-          <a class="header__navigation-element" href="#">LUXURY PACKEGES</a>
-          <a class="header__navigation-element" href="#">BOOK WITH US</a>
-          <a class="header__navigation-element" href="#">WHY LUX TRIP</a>
-          <a class="header__navigation-element" href="#">CONTACT</a>
-          <a class="header__navigation-element" href="#">CLIENT AREA</a>
-        </nav>
+    <div class="wrapper">
+      <header>
+        <div class="header">
+          <img src="./page_1/images/logo.svg" alt="logo" class="header__logo" />
+          <nav class="header__navigation">
+            <a class="header__navigation-element" href="#">HOME</a>
+            <a class="header__navigation-element" href="#">LUXURY PACKEGES</a>
+            <a class="header__navigation-element" href="#">BOOK WITH US</a>
+            <a class="header__navigation-element" href="#">WHY LUX TRIP</a>
+            <a class="header__navigation-element" href="#">CONTACT</a>
+            <a class="header__navigation-element" href="#">CLIENT AREA</a>
+          </nav>
 
-        <button class="header__buttom">CALL ME BACK</button>
-      </div>
-      <div class="text">
-        <span class="text__span">THE WORLD'S MOST </span>
-        <span class="text__bold">EXTRA ORDINARY</span>
-        <span class="text__addition">PLACES</span>
-      </div>
-      <div class="form">
-        <img src="./page_1/images/Layer.png" alt="" />
-        <div class="form__title">
-          <span>FIND YOUR JOURNEY</span>
+          <button class="header__buttom">CALL ME BACK</button>
         </div>
-        <div class="form__search">
-          <div class="form__search-one">
-            <span class="form__search-span">Destination</span>
-            <input
-              class="form-search-destination"
-              type="text"
-              placeholder="Where are you going?"
+        <div class="text">
+          <span class="text__span">THE WORLD'S MOST </span>
+          <span class="text__bold">EXTRA ORDINARY</span>
+          <span class="text__addition">PLACES</span>
+        </div>
+        <div class="form">
+          <img src="./page_1/images/Layer.png" alt="" />
+          <div class="form__title">
+            <span>FIND YOUR JOURNEY</span>
+          </div>
+          <div class="form__search">
+            <div class="form__search-one">
+              <span class="form__search-span">Destination</span>
+              <input
+                class="form-search-destination"
+                type="text"
+                placeholder="Where are you going?"
+              />
+            </div>
+            <div class="form__search-two">
+              <span class="form__search-span form__search-span_two"
+                >Travel type</span
+              >
+              <select class="form__travel-type" name="cities" id="cities">
+                <option value="1">Adventure travel</option>
+                <option value="2">Cultural tourism</option>
+                <option value="3">Eco tourism</option>
+                <option value="4">Beach Tourism</option>
+              </select>
+            </div>
+            <div class="form__search-three">
+              <span class="form__search-span form__search-span_three"
+                >When</span
+              >
+              <input class="form__search-date" type="date" />
+            </div>
+            <div class="form__search-four">
+              <span class="form__search-span form__search-span_four"
+                >Travellers</span
+              >
+              <select class="form__search-amount" name="cities" id="cities">
+                <option value="1">1 Person</option>
+                <option value="2">2 Persons</option>
+                <option value="3">3 Persons</option>
+                <option value="4">4 Persons</option>
+              </select>
+            </div>
+            <button class="form__find">FIND</button>
+          </div>
+        </div>
+      </header>
+      <section class="section-one">
+        <span class="section-one__title">Top Rated Experiences</span>
+        <nav class="section-one__navigation">
+          <a
+            href=""
+            class="section-one__navigation-element section-one__navigation-element_decorated"
+            >World</a
+          >
+          <a href="" class="section-one__navigation-element">Africa</a>
+          <a href="" class="section-one__navigation-element">Asia</a>
+          <a href="" class="section-one__navigation-element">Europe</a>
+          <a href="" class="section-one__navigation-element">North America</a>
+          <a href="" class="section-one__navigation-element">South America</a>
+          <a href="" class="section-one__navigation-element">Antarctica</a>
+          <a href="" class="section-one__navigation-element">Australia</a>
+        </nav>
+        <div class="section-one__images">
+          <div
+            class="section-one__images-element section-one__images-element_snow"
+          >
+            <div
+              class="section-one__images-card section-one__images-card_austria"
+            >
+              <span class="section-one__images-city">Austria</span>
+              <span class="section-one__images-title"
+                >Winter Park Ski Holiday</span
+              >
+              <span class="section-one__images-from">FROM</span>
+              <span class="section-one__images-amount">€ 1490</span>
+            </div>
+          </div>
+          <div
+            class="section-one__images-element section-one__images-element_mount"
+          >
+            <div class="section-one__images-card section-one__images-card_peru">
+              <span class="section-one__images-city">Peru</span>
+              <span class="section-one__images-title">Machu Picchu</span>
+              <span class="section-one__images-from">FROM</span>
+              <span class="section-one__images-amount">€ 2300</span>
+            </div>
+          </div>
+          <div
+            class="section-one__images-element section-one__images-element_beach"
+          >
+            <div
+              class="section-one__images-card section-one__images-card_austria"
+            >
+              <span class="section-one__images-city">Croatia</span>
+              <span class="section-one__images-title">Hvar</span>
+              <span class="section-one__images-from">FROM</span>
+              <span class="section-one__images-amount">€ 4500</span>
+            </div>
+          </div>
+          <div
+            class="section-one__images-element section-one__images-element_musa"
+          >
+            <div
+              class="section-one__images-card section-one__images-card_austria"
+            >
+              <span class="section-one__images-city">Jordan</span>
+              <span class="section-one__images-title">Wadi Musa</span>
+              <span class="section-one__images-from">FROM</span>
+              <span class="section-one__images-amount">€ 4500</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-two">
+        <div class="section-two__container">
+          <div class="section-two__packages">
+            <span class="section-two__packages-title">Luxury Packages</span>
+            <button class="section-two__packages-btn">VIEW ALL</button>
+          </div>
+          <div class="section-two__images section-two__images_one">
+            <span class="section-two__images-titel"
+              >Best Winter Destinations</span
+            >
+            <div class="section-two__images-amount">
+              <span
+                class="section-two__images-amount section-two__images-amount_large"
+                >34</span
+              >
+              <span>places</span>
+              <a href="#"
+                ><img
+                  src="./page_1/images/Vector_lux_packages.svg"
+                  alt="vektor"
+              /></a>
+            </div>
+          </div>
+          <div class="section-two__images section-two__images_two">
+            <span class="section-two__images-titel"
+              >The world's most extraordinary places</span
+            >
+            <div class="section-two__images-amount">
+              <span
+                class="section-two__images-amount section-two__images-amount_large"
+                >29</span
+              >
+              <span>places</span>
+              <a href="#"
+                ><img
+                  src="./page_1/images/Vector_lux_packages.svg"
+                  alt="vektor"
+              /></a>
+            </div>
+          </div>
+          <div class="section-two__images section-two__images_three">
+            <span class="section-two__images-titel"
+              >New destinations for 2022</span
+            >
+            <div class="section-two__images-amount">
+              <span
+                class="section-two__images-amount section-two__images-amount_large"
+                >47</span
+              >
+              <span>places</span>
+              <a href="#"
+                ><img
+                  src="./page_1/images/Vector_lux_packages.svg"
+                  alt="vektor"
+              /></a>
+            </div>
+          </div>
+          <div class="section-two__images section-two__images_four">
+            <span class="section-two__images-titel">Your health is matter</span>
+            <div class="section-two__images-amount">
+              <span
+                class="section-two__images-amount section-two__images-amount_large"
+                >29</span
+              >
+              <span>places</span>
+              <a href="#"
+                ><img
+                  src="./page_1/images/Vector_lux_packages.svg"
+                  alt="vektor"
+              /></a>
+            </div>
+          </div>
+          <div class="section-two__images section-two__images_five">
+            <span class="section-two__images-titel"
+              >Experiences Away From Crowd</span
+            >
+            <div class="section-two__images-amount">
+              <span
+                class="section-two__images-amount section-two__images-amount_large"
+                >168</span
+              >
+              <span>places</span>
+              <a href="#"
+                ><img
+                  src="./page_1/images/Vector_lux_packages.svg"
+                  alt="vektor"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="section-two__booking">Book With Us</div>
+        <div class="section-two__booking-options">
+          <div
+            class="section-two__booking-container section-two__booking-container_one"
+          >
+            <span class="section-two__booking-title">SUPERCARS</span>
+          </div>
+          <div
+            class="section-two__booking-container section-two__booking-container_two"
+          >
+            <span class="section-two__booking-title">HOTELS</span>
+          </div>
+        </div>
+      </section>
+      <section class="section-three">
+        <div class="section-three__booking">
+          <div
+            class="section-three__booking-container section-three__booking-container_three"
+          >
+            <span class="section-three__booking-title">VILLAS</span>
+          </div>
+          <div
+            class="section-three__booking-container section-three__booking-container_four"
+          >
+            <span class="section-three__booking-title">YACHTS</span>
+          </div>
+          <div
+            class="section-three__booking-container section-three__booking-container_five"
+          >
+            <span class="section-three__booking-title">PRIVATE HELICOPTER</span>
+          </div>
+          <div
+            class="section-three__booking-container section-three__booking-container_six"
+          >
+            <span class="section-three__booking-title">PRIVATE JAT</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- vlada -->
+      <main class="main">
+        <section class="about-us container">
+          <div class="about-us__box">
+            <div class="about-us__title">Why Lux Trips</div>
+            <p class="about-us__text">
+              As Travel Designer, we know the ins and outs of travel from who to
+              work with, where to go, when to book, and which restaurant
+              provides the most authentic cuisine.
+            </p>
+          </div>
+          <div class="about-us__img">
+            <div class="about-us__img-first">
+              <img
+                class="about-us__img-child"
+                src="./page_1/images/about-us_child.png"
+                alt="child"
+              />
+            </div>
+            <div class="about-us__img-second">
+              <img
+                class="about-us__img-family"
+                src="./page_1/images/about-us_family.png"
+                alt="family"
+              />
+            </div>
+            <div class="about-us__img-third">
+              <img
+                class="about-us__img-woman"
+                src="./page_1/images/about-us_woman.png"
+                alt="woman"
+              />
+            </div>
+          </div>
+          <div class="about-us__box-second">
+            <p class="about-us__title-second">
+              Exclusive knowledge to provide the best of the best to clients
+            </p>
+            <p class="about-us__text-second">
+              Our area of expertise ranges from luxury resorts and
+              villas/chalets holiday bookings, private yacht and jet charters,
+              to exclusive tours and personalized journey planning.
+            </p>
+            <img
+              class="about-us__img-couple"
+              src="./page_1/images/about-us_couple.png"
+              alt="couple"
             />
+            <p class="about-us__text-third">
+              We craft and plan unique itineraries tailored to customers’
+              interests and with strong attention to detail.
+            </p>
+            <button type="button" class="about-us__btn">
+              HELP ME PLAN A TRIP
+            </button>
           </div>
-          <div class="form__search-two">
-            <span class="form__search-span form__search-span_two"
-              >Travel type</span
-            >
-            <select class="form__travel-type" name="cities" id="cities">
-              <option value="1">Adventure travel</option>
-              <option value="2">Cultural tourism</option>
-              <option value="3">Eco tourism</option>
-              <option value="4">Beach Tourism</option>
-            </select>
+        </section>
+        <section class="customise">
+          <div class="customise__column container">
+            <h2 class="customise__title">Customise your trip with us</h2>
+            <div class="customise__steps">
+              <div class="customise__step">
+                <div class="customise__number">1</div>
+                <p class="customise__step-title">Describe your dream trip</p>
+                <p class="customise__text">
+                  Let us know what your perfect vacation is. Destinations,
+                  preferences, and personal interests.
+                </p>
+              </div>
+              <div class="customise__step">
+                <div class="customise__number">2</div>
+                <p class="customise__step-title customise__step-title_second">
+                  Get matched
+                </p>
+                <p class="customise__text">
+                  Our team will create perfect travel itinerary for you, based
+                  on your personalized needs and wishes.
+                </p>
+              </div>
+              <div class="customise__step">
+                <div class="customise__number customise__number_third">3</div>
+                <p class="customise__step-title">Book your vacation</p>
+                <p class="customise__text">
+                  Confirm your trip only when you are completely satisfied with
+                  the proposed travel plan.
+                </p>
+              </div>
+            </div>
+            <button type="button" class="customise__btn button">
+              Start a trip request
+            </button>
+            <p class="customise__free">It’s Free! - no credit card required</p>
           </div>
-          <div class="form__search-three">
-            <span class="form__search-span form__search-span_three">When</span>
-            <input class="form__search-date" type="date" />
+        </section>
+        <section class="subscribe">
+          <div class="subscribe__block">
+            <div class="subscribe__text">
+              <h2 class="subscribe__title">
+                Get weekly inspiration and expert advice
+              </h2>
+              <p class="subscribe__subtitle">
+                Sign up for our Weekly Newsletter
+              </p>
+            </div>
+            <div class="subscribe__input-btn">
+              <input
+                type="email"
+                name="email"
+                class="subscribe__input"
+                placeholder="Email address"
+              />
+              <button type="button" class="subscribe__btn">SUBSCRIBE</button>
+            </div>
           </div>
-          <div class="form__search-four">
-            <span class="form__search-span form__search-span_four"
-              >Travellers</span
-            >
-            <select class="form__search-amount" name="cities" id="cities">
-              <option value="1">1 Person</option>
-              <option value="2">2 Persons</option>
-              <option value="3">3 Persons</option>
-              <option value="4">4 Persons</option>
-            </select>
+        </section>
+        <section class="reviews">
+          <h2 class="reviews__title">Customers reviews</h2>
+          <div class="reviews__list">
+            <div class="reviews__item">
+              <img
+                src="./page_1/images/reviews_author-first.png"
+                alt="author"
+              />
+              <p class="reviews__text">
+                “Well organized trip, All arranged well by Arooz. Special thanks
+                to Aijaz Bhai for the service and support given to us, all
+                explained well and take us to all places as per our wish. It was
+                a wonderful experience .... Thank you team”
+              </p>
+              <p class="reviews__author">- Eduard Hand</p>
+              <p class="reviews__author-place">Müller-Egerer</p>
+            </div>
+            <div class="reviews__item reviews__item_second">
+              <img
+                src="./page_1/images/reviews_author-second.png"
+                alt="author"
+              />
+              <p class="reviews__text">
+                “We want to visit Manali from long time. Abhishek from ideal
+                tour give us the best quote for Manali tour. He was very
+                supportive and approachable at any time. He made our trip
+                hassle-free. Thanks for your great help Abhishek...Ideal
+                Tour..!!!”
+              </p>
+              <p class="reviews__author">- Marie Kähler</p>
+              <p class="reviews__author-place">Lekkerland</p>
+            </div>
           </div>
-          <button class="form__find">FIND</button>
-        </div>
-      </div>
-    </header>
-    <section class="section-one">
-      <span class="section-one__title">Top Rated Experiences</span>
-      <nav class="section-one__navigation">
-        <a
-          href=""
-          class="section-one__navigation-element section-one__navigation-element_decorated"
-          >World</a
-        >
-        <a href="" class="section-one__navigation-element">Africa</a>
-        <a href="" class="section-one__navigation-element">Asia</a>
-        <a href="" class="section-one__navigation-element">Europe</a>
-        <a href="" class="section-one__navigation-element">North America</a>
-        <a href="" class="section-one__navigation-element">South America</a>
-        <a href="" class="section-one__navigation-element">Antarctica</a>
-        <a href="" class="section-one__navigation-element">Australia</a>
-      </nav>
-      <div class="section-one__images">
-        <div
-          class="section-one__images-element section-one__images-element_snow"
-        >
-          <div
-            class="section-one__images-card section-one__images-card_austria"
-          >
-            <span class="section-one__images-city">Austria</span>
-            <span class="section-one__images-title"
-              >Winter Park Ski Holiday</span
-            >
-            <span class="section-one__images-from">FROM</span>
-            <span class="section-one__images-amount">€ 1490</span>
+        </section>
+        <section class="contact container">
+          <div class="contact__wrap">
+            <div class="contact__inner">
+              <div class="contact__title">Contact</div>
+              <input
+                type="text"
+                class="contact__name contact__input"
+                name="name"
+                placeholder="Name"
+              />
+              <input
+                type="tel"
+                class="contact__tel contact__input"
+                name="phone"
+                placeholder="Phone"
+              />
+              <button type="button" class="contact__btn button">
+                CALL ME BACK
+              </button>
+            </div>
           </div>
-        </div>
-        <div
-          class="section-one__images-element section-one__images-element_mount"
-        >
-          <div class="section-one__images-card section-one__images-card_peru">
-            <span class="section-one__images-city">Peru</span>
-            <span class="section-one__images-title">Machu Picchu</span>
-            <span class="section-one__images-from">FROM</span>
-            <span class="section-one__images-amount">€ 2300</span>
-          </div>
-        </div>
-        <div
-          class="section-one__images-element section-one__images-element_beach"
-        >
-          <div
-            class="section-one__images-card section-one__images-card_austria"
-          >
-            <span class="section-one__images-city">Croatia</span>
-            <span class="section-one__images-title">Hvar</span>
-            <span class="section-one__images-from">FROM</span>
-            <span class="section-one__images-amount">€ 4500</span>
-          </div>
-        </div>
-        <div
-          class="section-one__images-element section-one__images-element_musa"
-        >
-          <div
-            class="section-one__images-card section-one__images-card_austria"
-          >
-            <span class="section-one__images-city">Jordan</span>
-            <span class="section-one__images-title">Wadi Musa</span>
-            <span class="section-one__images-from">FROM</span>
-            <span class="section-one__images-amount">€ 4500</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-two">
-      <div class="section-two__container">
-        <div class="section-two__packages">
-          <span class="section-two__packages-title">Luxury Packages</span>
-          <button class="section-two__packages-btn">VIEW ALL</button>
-        </div>
-        <div class="section-two__images section-two__images_one">
-          <span class="section-two__images-titel"
-            >Best Winter Destinations</span
-          >
-          <div class="section-two__images-amount">
-            <span class="section-two__images-amount section-two__images-amount_large">34</span>
-            <span>places</span>
-            <a href="#"><img src="./page_1/images/Vector_lux_packages.svg" alt="vektor"></a>
-          </div>
-          
-        </div>
-        <div class="section-two__images section-two__images_two">
-          <span class="section-two__images-titel"
-            >The world's most extraordinary places</span
-          >
-          <div class="section-two__images-amount">
-            <span class="section-two__images-amount section-two__images-amount_large">29</span>
-            <span>places</span>
-            <a href="#"><img src="./page_1/images/Vector_lux_packages.svg" alt="vektor"></a>
-          </div>
-        </div>
-        <div class="section-two__images section-two__images_three">
-          <span class="section-two__images-titel"
-            >New destinations for 2022</span
-          >
-          <div class="section-two__images-amount">
-            <span class="section-two__images-amount section-two__images-amount_large">47</span>
-            <span>places</span>
-            <a href="#"><img src="./page_1/images/Vector_lux_packages.svg" alt="vektor"></a>
-          </div>
-        </div>
-        <div class="section-two__images section-two__images_four">
-          <span class="section-two__images-titel">Your health is matter</span>
-          <div class="section-two__images-amount">
-            <span class="section-two__images-amount section-two__images-amount_large">29</span>
-            <span>places</span>
-            <a href="#"><img src="./page_1/images/Vector_lux_packages.svg" alt="vektor"></a>
-          </div>
-        </div>
-        <div class="section-two__images section-two__images_five">
-          <span class="section-two__images-titel"
-            >Experiences Away From Crowd</span
-          >
-          <div class="section-two__images-amount">
-            <span class="section-two__images-amount section-two__images-amount_large">168</span>
-            <span>places</span>
-            <a href="#"><img src="./page_1/images/Vector_lux_packages.svg" alt="vektor"></a>
+        </section>
+      </main>
+      <footer class="footer container">
+        <div class="footer__wrapper">
+          <img
+            class="footer__logo"
+            src="./page_1/images/footer_logo.svg"
+            alt="logo"
+          />
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">LUXURY PACKAGES</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">BOOK WITH US</a>
+              </li>
+            </ul>
+            <button class="footer__menu-btn" type>CALL ME BACK</button>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">WHY LUX TRIPS</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__copyright-text">
+            <p>© 2021 All Rights Reserved | Luxtrips</p>
+            <p>Company Site | Privacy Policy</p>
           </div>
         </div>
-      </div>
-      <div class="section-two__booking">Book With Us</div>
-      <div class="section-two__booking-options">
-        <div class="section-two__booking-container section-two__booking-container_one">
-          <span class="section-two__booking-title">SUPERCARS</span>
-        </div>
-        <div class="section-two__booking-container  section-two__booking-container_two">
-        <span class="section-two__booking-title">HOTELS</span>
-      </div>
-      </div>
-    </section>
-    <section class="section-three">
-      <div class="section-three__booking">
-        <div class="section-three__booking-container section-three__booking-container_three">
-          <span class="section-three__booking-title">VILLAS</span>
-        </div>
-        <div class="section-three__booking-container section-three__booking-container_four">
-          <span class="section-three__booking-title">YACHTS</span>
-        </div>
-        <div class="section-three__booking-container section-three__booking-container_five">
-          <span class="section-three__booking-title">PRIVATE HELICOPTER</span>
-        </div>
-        <div class="section-three__booking-container section-three__booking-container_six">
-          <span class="section-three__booking-title">PRIVATE JAT</span>
-        </div>
-      </div>
-    </section>
+      </footer>
+    </div>
   </body>
 </html>
