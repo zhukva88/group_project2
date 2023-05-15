@@ -165,7 +165,7 @@ display: none;
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../page_2/images/button_load-more_btn.png);
+    background-image: url(../images/button_load-more_btn.png);
     min-width: 36px;
     min-height: 15px;
     left: 154px;
@@ -180,7 +180,7 @@ display: none;
     position: absolute;
     height: 61px;
     top: -28px;
-    background-image: url(../page_2/images/load__more__button.png);
+    background-image: url(../images/load__more__button.png);
     left: 32px;
     right: 32px;
     min-width: 280px;
@@ -229,7 +229,7 @@ display: none;
 }
 
 .tour-type{
-    background-image: url(../page_2/images/icon_rhomb.png);
+    background-image: url(../images/icon_rhomb.png);
     background-repeat: no-repeat;
     background-position:left ;
    
@@ -237,12 +237,12 @@ display: none;
 
 .date{
    
-    background-image: url(../page_2/images/icon_calendar.png);
+    background-image: url(../images/icon_calendar.png);
     background-repeat: no-repeat;
     background-position:  left  4px;
 }
 .number{
-    background-image: url(../page_2/images/icon_user.png);
+    background-image: url(../images/icon_user.png);
     background-repeat: no-repeat;
     background-position:left 4px;
    
@@ -291,7 +291,7 @@ display: none;
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../page_2/images/button_load-more_btn.png);
+    background-image: url(../images/button_load-more_btn.png);
     min-width: 36px;
     min-height: 15px;
     margin-top: 12px;
@@ -305,7 +305,7 @@ display: none;
     position: absolute;
     height: 61px;
     top: -30px;
-    background-image: url(../page_2/images/load__more__button.png);
+    background-image: url(../images/load__more__button.png);
     left: 50%;
     transform: translateX(-50%);
     min-width: 280px;
@@ -433,7 +433,7 @@ display: none;
     font-size: 12px;
     line-height: 16.39px;
     padding-left: 13px;
-    background-image: url(../page_2/images/icon_marker.png);
+    background-image: url(../images/icon_marker.png);
     background-repeat: no-repeat;
 }
 .card__country h2{
@@ -504,7 +504,8 @@ transform:translateY(-316px) ;
     margin-top: 50px;
     min-height: 565px;
     max-width: 100%;
-   background-image: url(../page_2/images/main_image_big.png);
+//    background-image: url(../images/main_image_big.png);
+background-image: url(../images/main_image_big.png);
    background-repeat: no-repeat;
    border-radius: 10px;
    background-size: 1110px  565px;
@@ -524,7 +525,7 @@ transform:translateY(-316px) ;
     // top: -20px;
     bottom: -13px;
     left: 20px;
-    background-image: url(../page_2/images/border_main-card.png);
+    background-image: url(../images/border_main-card.png);
     background-repeat: no-repeat;
     background-position: center 0px;
     background-size: contain;
@@ -871,7 +872,7 @@ display: none;
         position: absolute;
         height: 61px;
         top: -27px;
-        background-image: url(../page_2/images/load__more__button.png);
+        background-image: url(../images/load__more__button.png);
         left: 50%;
         transform: translateX(-50%);
     }
@@ -880,7 +881,7 @@ display: none;
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../page_2/images/button_load-more_btn.png);
+    background-image: url(../images/button_load-more_btn.png);
     min-width: 36px;
     min-height: 15px;
     left: 50%;
@@ -1036,7 +1037,7 @@ display: none;
             position: absolute;
             height: 61px;
             top: -27px;
-            background-image: url(../page_2/images/load__more__button.png);
+            background-image: url(../images/load__more__button.png);
             left: 50%;
             transform: translateX(-50%);
         }
@@ -1045,7 +1046,7 @@ display: none;
         content: "";
         display: block;
         position: absolute;
-        background-image: url(../page_2/images/button_load-more_btn.png);
+        background-image: url(../images/button_load-more_btn.png);
         min-width: 36px;
         min-height: 15px;
         left: 50%;
