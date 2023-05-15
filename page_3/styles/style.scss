@@ -1,3 +1,4 @@
+@import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@400;500;600&display=swap');
 
 $color-primary:#FFFFFF;
@@ -57,48 +58,53 @@ html{
     min-height: 6.4rem;
     margin: 0 auto
  }
-.header-nav{
+.header__body{
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
     padding: 0rem 0.4rem;
 }
-.header-nav__img-logo{
+.header__logo{
     width: 12.1rem;
     height: 6.35rem;
     display: flex;
     justify-content: flex-start; 
     text-shadow: 0 4px 4px rgba(0,0,0,0.25);  
 }
-.header-nav__menu-list{
+.header__logo-img{
+    max-width: 100%;
+    display: block;
+  
+}
+.header__list{
     max-width: 105.5rem;
     max-height: 18px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
-.header-nav__menu-item{
+.header__item{
     text-decoration: none;
     color: inherit;
     @extend %font-primary;
     line-height: 1.125;
     font-size: 1.6rem;
 }
-.header-nav__menu-item:not(:last-child){
+.header__item:not(:last-child){
     margin: 0px 4rem 0px 0px;
 }
-.header-nav__menu-link{
+.header__link{
     text-decoration: none;
     color: inherit;
     text-shadow: 0 4px 4px rgba(0,0,0,0.25);  
     cursor: pointer;
 }
-.header-nav__menu-link:hover{
+.header__link:hover{
     text-decoration: underline;
     color: $color-primary;
 }
-.header-nav__button-box{
+.header__button-box{
     width: 12.1rem;
     height: 4rem;
     background-image: url(../images/button_call_me.png);
@@ -132,6 +138,7 @@ html{
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(3, 33.33%);
     align-items: start;
+    gap: 1rem;
     padding: 6.5rem;
     margin: 10rem;
     box-sizing: border-box; 
@@ -140,7 +147,6 @@ html{
     max-width: 54rem;
     min-height: 19.1rem;
     height: auto;
-    padding: 15px;
     text-shadow: 0 4px 4px rgba(0,0,0,0.25);  
 }
 .main__grid_item1{
@@ -292,8 +298,7 @@ html{
     font-size: 6rem;
     line-height: 1.03;
     color: #ffffff;
-    padding-bottom: 20px;
-    border: $border;
+    padding-bottom: 2rem;
     text-shadow: 0 4px 4px rgba(0,0,0,0.25); 
   }
   .subscribe__subtitle {
@@ -323,7 +328,7 @@ html{
     font-size: 1.6rem;
     line-height: 1.798;
     color: #0c0b10;
-    @extend%font-secondary;
+    @extend %font-secondary;
     padding-left: 30px;
   }
   .subscribe__input::placeholder {
@@ -331,7 +336,7 @@ html{
     font-size: 1.6rem;
     line-height: 1.798;
     color: #0c0b10;
-    @extend%font-secondary;
+    @extend %font-secondary;
     padding-left: 30px;
   }
   .subscribe__btn {
@@ -353,7 +358,6 @@ html{
   }
   
   .subscribe__btn::before {
-    background-image: url(../images/subscribe_btn.png);
     content: "";
     display: block;
     position: absolute;
@@ -363,6 +367,9 @@ html{
     right: 0;
     background-repeat: no-repeat;
   }
+  .subscribe__button{
+    display: none;
+    }
   
 /*------------------------------------------------------*/  
 .footer__container{
@@ -429,7 +436,7 @@ html{
 .footer-nav__button-link{
     max-width: 10.7rem;
     max-height: 18px;
-    @extend%font-primary;
+    @extend %font-primary;
     font-size: 1.6rem;
     line-height: 1.125;
     margin: 1rem 2.5rem;
@@ -443,7 +450,7 @@ html{
     border: 2px solid purple;
 }
 .privacy__text{
-    @extend%font-secondary;
+    @extend %font-secondary;
     font-size: 1.2rem;
     line-height: 1.33;
     color:$color-primary;
@@ -452,6 +459,71 @@ html{
     border: 2px solid purple;
 }
 
+@media (max-width: 1260px){
+    html{
+       font-size: 46.875%;
+    }
+    .main__grid{
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 5.5rem;
+    }
+    .main__grid_item-text-p{
+            max-width: 41rem;
+            min-height: 17.7rem;
+    }
+    .main-subscribe__container{
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+    .subscribe__box {
+        margin: 4rem auto 7rem auto;
+        max-width: 120rem;
+        background-position: 100%;
+      }
+    .subscribe__button{
+        display: none;
+    }
+    }
 
+@media screen and (max-width: 902px) {
+    html{
+       font-size: 35.156%;
+    }
+    .main__grid_item-text-p {
+        max-width: 40rem;
+        min-height: 23.7rem;
+    }
+    .main-subscribe__container{
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+    .subscribe__box {
+        margin: 4rem auto 7rem auto;
+        max-width: 120rem;
+        background-position: 100%;
+      }
     
+    .subscribe__buttons{ /*  не появляются кнопки доделать*/
+        min-height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.2px;
+        color: $color-secondary;
+        font-weight: 400;
+        text-align: center;
+        line-height: 150%;
+        border-radius: 3.7rem;
+        padding: 0.5rem 3.6rem;
+    }
+    .subscribe__input-btn {
+        display: none;
+    }
+}
 
+@media (max-width: 700px){ /*мобильная адаптация доделать*/
+    html{
+       font-size: 26.367%;
+    }
+}

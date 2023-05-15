@@ -1,0 +1,63 @@
+/*указываем box-sizing*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+/*убираем внутренние отступы  и стандартную стилизацию */
+ul[class],
+ol[class] {
+    padding: 0;
+    list-style: none;
+  }
+/*Элементы а, у которых нет класса, сбрасываем до дефолтных стилей*/
+a {
+    text-decoration: none;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+/*убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd{
+    margin: 0;
+  }
+
+  img {
+    transition: transform 0.3s ease-out;
+  }
+  
+  img:hover {
+    transform: scale(1.1) translate(5px, 5px);
+  }
+
+  button{
+    transition: transform 0.3s ease-out;
+  }
+  
+  button:hover {
+    transform: scale(1.1) translate(1px, 1px);
+  }
+  /*наследуем шрифты для кнопок и вводов */
+  input,
+  button,
+  textarea,
+  select{
+    font:inherit;
+  }

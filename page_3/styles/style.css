@@ -1,13 +1,14 @@
 @charset "UTF-8";
+@import './reset.css';
 @import url("https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@400;500;600&display=swap");
-.main__grid_item-button_btn-box, .main__grid_item-title1, .main__grid_item-title2, .main__grid_item-title3, .main__grid_item-title4, .main__grid_item-title5, .main__grid_item-title6, .header-nav__button-box {
+.main__grid_item-button_btn-box, .main__grid_item-title1, .main__grid_item-title2, .main__grid_item-title3, .main__grid_item-title4, .main__grid_item-title5, .main__grid_item-title6, .header__button-box {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.footer-nav__button-link, .footer-nav__menu-link, .main__grid_item-title_link, .main__title, .header-nav__menu-item {
+.footer-nav__button-link, .footer-nav__menu-link, .main__grid_item-title_link, .main__title, .header__item {
   font-family: "Forum", cursive;
   font-weight: 400;
 }
@@ -22,7 +23,7 @@
   font-weight: 400;
 }
 
-.footer-nav__button, .main__grid_item-button_btn-box, .main__grid_item-title_link, .header-nav__button-box {
+.footer-nav__button, .main__grid_item-button_btn-box, .main__grid_item-title_link, .header__button-box {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top;
@@ -59,7 +60,7 @@ html {
   margin: 0 auto;
 }
 
-.header-nav {
+.header__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,7 +68,7 @@ html {
   padding: 0rem 0.4rem;
 }
 
-.header-nav__img-logo {
+.header__logo {
   width: 12.1rem;
   height: 6.35rem;
   display: flex;
@@ -75,7 +76,12 @@ html {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header-nav__menu-list {
+.header__logo-img {
+  max-width: 100%;
+  display: block;
+}
+
+.header__list {
   max-width: 105.5rem;
   max-height: 18px;
   display: flex;
@@ -83,30 +89,30 @@ html {
   list-style: none;
 }
 
-.header-nav__menu-item {
+.header__item {
   text-decoration: none;
   color: inherit;
   line-height: 1.125;
   font-size: 1.6rem;
 }
 
-.header-nav__menu-item:not(:last-child) {
+.header__item:not(:last-child) {
   margin: 0px 4rem 0px 0px;
 }
 
-.header-nav__menu-link {
+.header__link {
   text-decoration: none;
   color: inherit;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
-.header-nav__menu-link:hover {
+.header__link:hover {
   text-decoration: underline;
   color: #FFFFFF;
 }
 
-.header-nav__button-box {
+.header__button-box {
   width: 12.1rem;
   height: 4rem;
   background-image: url(../images/button_call_me.png);
@@ -141,6 +147,7 @@ html {
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(3, 33.33%);
   align-items: start;
+  gap: 1rem;
   padding: 6.5rem;
   margin: 10rem;
   box-sizing: border-box;
@@ -150,7 +157,6 @@ html {
   max-width: 54rem;
   min-height: 19.1rem;
   height: auto;
-  padding: 15px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -288,51 +294,43 @@ html {
 }
 
 /*доделать */
-.main-subscribe__container {
-  padding-top: 14.5rem;
-    padding-bottom: 11rem;
-}
 .subscribe__box {
-  box-sizing: border-box;
-  padding-left: 18.5rem;
-  padding-top: 13rem;
-  padding-bottom: 12rem;
-  margin: 0 auto 7rem auto;
+  margin: -1rem auto 7rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 8%;
+  padding-top: 14.5rem;
+  padding-bottom: 11rem;
   max-width: 111rem;
   background-image: url(../images/main-subscrube-bg.png), url(../images/main-subscribe-border.png);
-  background-position: 0 3.8rem, center;
+  background-position: 5rem, center;
   background-repeat: no-repeat;
   border-radius: 1rem;
 }
 
-/* .subscribe__box > *:not(:last-child) {
+.subscribe__box > *:not(:last-child) {
   margin: 0px 0px 35px 0px;
-} */
+}
 
 .subscribe__description {
   max-width: 56.5rem;
-  /* padding-left: 18.5rem; */
-  /* margin-bottom: 4.4rem; */
+  padding-left: 18.5rem;
+  margin-bottom: 4.4rem;
 }
 
 .subscribe__title {
-  margin: 0;
   max-width: 52rem;
   min-height: 21rem;
   font-weight: 400;
   font-size: 6rem;
   line-height: 1.03;
   color: #ffffff;
-  padding-bottom: 0;
-  border: 2px solid red;
+  padding-bottom: 2rem;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .subscribe__subtitle {
-  margin-top: 0;
   font-weight: 400;
   line-height: 1.798;
   color: #ffffff;
@@ -351,12 +349,10 @@ html {
   border: 1px solid #ffffff;
   border-radius: 95px;
   height: 55px;
-  padding-left: 4rem;
   background: transparent;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   outline: none;
-  box-sizing: border-box;
 }
 
 .subscribe__input::-moz-placeholder {
@@ -391,11 +387,9 @@ html {
   z-index: 1;
   right: 0;
   cursor: pointer;
-  border: none;
 }
 
 .subscribe__btn::before {
-  background-image: url(../images/subscribe_btn.png);
   content: "";
   display: block;
   position: absolute;
@@ -404,6 +398,10 @@ html {
   bottom: -33px;
   right: 0;
   background-repeat: no-repeat;
+}
+
+.subscribe__button {
+  display: none;
 }
 
 /*------------------------------------------------------*/
@@ -500,4 +498,70 @@ html {
   padding: 0.5rem;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border: 2px solid purple;
+}
+
+@media (max-width: 1260px) {
+  html {
+    font-size: 46.875%;
+  }
+  .main__grid {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 5.5rem;
+  }
+  .main__grid_item-text-p {
+    max-width: 41rem;
+    min-height: 17.7rem;
+  }
+  .main-subscribe__container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  .subscribe__box {
+    margin: 4rem auto 7rem auto;
+    max-width: 120rem;
+    background-position: 100%;
+  }
+  .subscribe__button {
+    display: none;
+  }
+}
+@media screen and (max-width: 902px) {
+  html {
+    font-size: 35.156%;
+  }
+  .main__grid_item-text-p {
+    max-width: 40rem;
+    min-height: 23.7rem;
+  }
+  .main-subscribe__container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  .subscribe__box {
+    margin: 4rem auto 7rem auto;
+    max-width: 120rem;
+    background-position: 100%;
+  }
+  .subscribe__buttons { /*  не появляются кнопки доделать*/
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+    line-height: 150%;
+    border-radius: 3.7rem;
+    padding: 0.5rem 3.6rem;
+  }
+  .subscribe__input-btn {
+    display: none;
+  }
+}
+@media (max-width: 700px) { /*мобильная адаптация доделать*/
+  html {
+    font-size: 26.367%;
+  }
 }/*# sourceMappingURL=style.css.map */
