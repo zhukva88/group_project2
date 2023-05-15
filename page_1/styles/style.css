@@ -19,6 +19,10 @@ body {
   font-family: "Forum", cursive;
 }
 
+.header__menu-open {
+  display: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -1320,5 +1324,21 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .about-us__btn {
     margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form__search {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .section-one__navigation-element {
+    display: none;
+  }
+  .section-one__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
