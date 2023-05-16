@@ -7,10 +7,310 @@ html {
 *::after {
     box-sizing: inherit;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+$font: 'Forum';
+
+%h3_title_style {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #0C0B10;
+}
+
+%p_text_style {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 179.8%;
+    text-align: center;
+    color: #000000;
+}
+
+
 body {
-    max-width: 1920px;
-    width: 100%;
+    font-family: $font;
     background-color: #E2D3CE;
+
+}
+
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header {
+    min-height: 1400px;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../images/mont_bg_fin.png), url(../images/header_sky.png);
+    background-size: 114% 70%, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right center, top;
+    border: green solid;
+}
+
+/*Menu*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+    width: 100%;
+    padding-top: 24px;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+
+    .list__item {
+        margin-right: 1.5vw;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .list__item-style {
+            text-decoration: none;
+            font-family: $font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: #000000;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 165px;
+    width: 100%;
+    min-height: 58px;
+    background-image: url(../images/button\ call\ me.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .button__title {
+        font-family: $font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #000000;
+        text-decoration: none;
+        margin: 11px 16px 11px 16px;
+    }
+}
+
+.title {
+    width: 100%;
+    min-height: 1300px;
+    position: relative;
+    overflow: hidden;
+    border: black solid;
+
+    .title__text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 12%;
+
+        .title__text-main {
+            font-family: 'Forum';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 197.951px;
+            line-height: 129px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #FCFCFC;
+            text-align: center;
+        }
+    }
+
+    .title__pic {
+        display: block;
+        position: absolute;
+
+        .title__pic_style {
+            border-style: none;
+        }
+    }
+
+    .title__pic-one {
+        display: flex;
+        justify-content: center;
+        z-index: 3;
+        width: 100%;
+        top: 16.5%;
+        left: 0.7%;
+        opacity: 10;
+        transform: scale(1.1);
+    }
+
+    .title__items-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 22rem;
+
+        .title__items {
+            display: flex;
+            height: 1000px;
+            width: 80rem;
+            justify-content: space-between;
+            border: red solid;
+
+            .items__group {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: yellow solid;
+                width: 18rem;
+                height: 40vh;
+                z-index: 6;
+            }
+
+            .group-two {
+                width: 21rem;
+                margin-top: 20vh;
+
+                .group-image-two {
+                    width: 20rem;
+                }
+            }
+
+            .group-three {
+                justify-content: flex-end;
+            }
+
+            .items__group-image {
+                width: 18rem;
+                height: 23rem;
+                display: flex;
+                justify-content: center;
+            }
+
+            .items__group-title {
+                @extend %h3_title_style;
+            }
+
+            .items__group-text {
+                margin-top: 1.5em;
+                @extend %p_text_style;
+            }
+        }
+    }
+}
+
+/*Section-one*/
+
+.section-one {
+    display: flex;
+    justify-content: center;
+    margin-top: -420px;
+    border: blue solid;
+    min-height: 1700px;
+    height: 100%;
+    max-width: 1920px;
+    background-image: url(../images/main_clouds.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+
+    .section-one__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+        width: 80rem;
+        margin-top: 420px;
+        border: red solid;
+
+        .section-one__item-one {
+            display: flex;
+            width: 35rem;
+            border: green solid;
+
+            .section-one__title {
+                margin-right: 35px;
+                width: 16rem;
+
+                .section-one__title_style {
+                    @extend %h3_title_style;
+                    text-align: start;
+                }
+            }
+
+            .section-one__text {
+                width: 16rem;
+
+                .section-one__text_style {
+                    @extend %p_text_style;
+                    text-align: start;
+                }
+            }
+        }
+
+        .section-one__item-two {
+            box-sizing: border-box;
+            position: relative;
+            width: 48rem;
+            min-height: 400px;
+            display: flex;
+            margin-top: 51px;
+            border: yellow solid;
+
+            .rectangle {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                width: 12rem;
+                height: 12rem;
+                border: #79655E solid 1px;
+                transform: rotate(45deg) skew(20deg, 20deg);
+                top: 25%;
+
+
+                .rec {
+                    position: relative;
+                    width: 10rem;
+                    height: 5rem;
+                    border: red solid;
+                    transform: rotate(-45deg);
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 10px;
+                }
+
+
+            }
+        }
+    }
+
+
+
+
+
 }
