@@ -1,0 +1,13 @@
+// подключение перемнных
+@import './abstracts/variables';
+
+// подключение обих стилей для сайта
+@import './base/base';
+
+// подключение шапки, подвала и навигации
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/footer';
+
+
+// подключение компонентов
