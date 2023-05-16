@@ -308,9 +308,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 4.5vw;
   font-family: "Forum", cursive;
   margin-top: 2vw;
-  padding-top: 4vw;
+  padding-top: 50px;
   width: 39vw;
-  height: 16vw;
+  height: 240px;
   text-align: center;
   background-image: url(../images/section-one_deco.png);
   background-repeat: no-repeat;
@@ -530,24 +530,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .section-two__booking {
-  display: flex;
-  font-size: 60px;
+  font-size: 3.5vw;
   font-family: "Forum", cursive;
   text-align: center;
-  padding: 60px;
-  justify-content: center;
+  padding: 4vw 40vw 2vw 47vw;
 }
 
 .section-two__booking-options {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  -moz-column-gap: 45px;
-       column-gap: 45px;
-  row-gap: 45px;
-  padding-top: 3vw;
+  padding: 3vw 5vw 2vw 5vw;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
 }
 
 .section-two__images-amount {
@@ -571,7 +566,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 15vw;
   background-image: url(../images/section-two_supercars.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -588,7 +583,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 15vw;
   background-image: url(../images/section-two_hotel.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -598,17 +593,18 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  padding-left: 70px;
-  padding-right: 70px;
-  -moz-column-gap: 45px;
-       column-gap: 45px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  row-gap: 2vw;
 }
 
 .section-three__booking-container_three {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 15vw;
   background-image: url(../images/section-three_villas.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -618,7 +614,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 15vw;
   background-image: url(../images/section-three_yachts.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -628,7 +624,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 15vw;
   background-image: url(../images/section-three_helicopters.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -638,7 +634,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 15vw;
   background-image: url(../images/section-three_jet.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1305,6 +1301,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 @media screen and (max-width: 1024px) {
+  .section-one__navigation-element {
+    padding-left: 10px;
+  }
   .about-us__img-second {
     display: none;
   }
@@ -1387,12 +1386,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .text__span {
     font-size: 17px;
+    width: 93px;
   }
   .form {
     justify-content: flex-start;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5px;
+    margin-top: 40px;
     max-width: 344px;
     height: 418px;
   }
@@ -1450,7 +1450,18 @@ input[type=date]::-webkit-calendar-picker-indicator {
     margin-left: 10px;
   }
   .section-one {
-    margin-top: 248px;
+    margin-top: 278px;
+  }
+  .section-one__title {
+    font-size: 40px;
+    line-height: 44px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 35px;
+    width: 204px;
+    height: 160px;
+    background-size: 40%;
+    line-height: 44px;
   }
   .section-one__navigation-element {
     display: none;
@@ -1502,6 +1513,129 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .section-one__images-amount {
     font-size: 21px;
     line-height: 98.5%;
+  }
+  .section-two__container {
+    display: block;
+    height: 722px;
+    padding: 80px 0 0 0;
+    margin: auto;
+  }
+  .section-two__packages {
+    display: flex;
+    flex-direction: row;
+    width: 315px;
+    margin: auto;
+    -moz-column-gap: 7.6vw;
+         column-gap: 7.6vw;
+  }
+  .section-two__packages-title {
+    font-size: 40px;
+    line-height: 44px;
+    width: 144px;
+  }
+  .section-two__packages-btn {
+    width: 143px;
+    padding: 0;
+    border-radius: 61.3171px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 46px;
+    height: 40px;
+  }
+  .section-two__booking {
+    display: block;
+    padding: 0;
+    margin: 122px auto 0 auto;
+    width: 123px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .section-two__booking-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 14px;
+    width: 345px;
+    margin: auto;
+    padding: 65px 0 0 0;
+  }
+  .section-two__images-titel {
+    max-width: 270px;
+    padding-top: 62px;
+    font-size: 36px;
+    line-height: 98.5%;
+  }
+  .section-two__images {
+    margin: 20px auto 0 auto;
+    max-width: 320px;
+    height: 530px;
+  }
+  .section-two__images_one {
+    width: 320px;
+  }
+  .section-two__images_two,
+  .section-two__images_three,
+  .section-two__images_four,
+  .section-two__images_five {
+    display: none;
+  }
+  .section-two__booking-container {
+    display: block;
+    width: 345px;
+    height: 192px;
+    background-size: cover;
+    padding: 74px 60px;
+  }
+  .section-two__booking-container_one {
+    display: block;
+    width: 345px;
+    height: 192px;
+    background-image: url(../images/section-two_supercars-mob.png);
+    background-size: cover;
+    padding: 74px 75px;
+  }
+  .section-two__booking-container_two {
+    background-image: url(../images/section-two_hotel-mob.png);
+    padding: 74px 110px;
+  }
+  .section-three__booking {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 0 0;
+    row-gap: 16px;
+    width: 345px;
+    margin: auto;
+  }
+  .section-three__booking-container {
+    display: block;
+    width: 345px;
+    height: 192px;
+    background-size: cover;
+    padding: 74px 96px;
+  }
+  .section-three__booking-container_three {
+    background-image: url(../images/section-three_villas-mob.png);
+  }
+  .section-three__booking-container_four {
+    background-image: url(../images/section-three_yachts-mob.png);
+  }
+  .section-three__booking-container_five {
+    background-image: url(../images/section-three_helicopters-mob.png);
+    padding: 61px 71px;
+    text-align: center;
+  }
+  .section-three__booking-container_six {
+    background-image: url(../images/section-three_jet-mob.png);
+    padding: 58px 96px;
+    text-align: center;
+  }
+  .section-three__booking-title {
+    text-align: center;
+    width: 15vw;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Forum", cursive;
+    font-size: 40px;
   }
   .about-us {
     min-height: 1570px;
