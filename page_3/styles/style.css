@@ -400,10 +400,6 @@ html {
   background-repeat: no-repeat;
 }
 
-.subscribe__button {
-  display: none;
-}
-
 /*------------------------------------------------------*/
 .footer__container {
   max-width: 160rem;
@@ -522,9 +518,6 @@ html {
     max-width: 120rem;
     background-position: 100%;
   }
-  .subscribe__button {
-    display: none;
-  }
 }
 @media screen and (max-width: 902px) {
   html {
@@ -537,27 +530,6 @@ html {
   .main-subscribe__container {
     max-width: 120rem;
     margin: 0 auto;
-  }
-  .subscribe__box {
-    margin: 4rem auto 7rem auto;
-    max-width: 120rem;
-    background-position: 100%;
-  }
-  .subscribe__buttons { /*  не появляются кнопки доделать*/
-    min-height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 0.2px;
-    color: #000000;
-    font-weight: 400;
-    text-align: center;
-    line-height: 150%;
-    border-radius: 3.7rem;
-    padding: 0.5rem 3.6rem;
-  }
-  .subscribe__input-btn {
-    display: none;
   }
 }
 @media (max-width: 700px) { /*мобильная адаптация доделать*/
